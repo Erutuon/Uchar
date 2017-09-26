@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="..\JavaScript\jquery-3.2.1.min.js"></script>
+		<script src="Unicode data.js"></script>
+		<script src="script data.js"></script>
+		<script src="test.js"></script>
+		<style>
+			body {
+				font-size: x-large;
+			}
+			#character-name-search {
+				width: 20em;
+			}
+			.character-copyable {
+				text-align: center;
+			}
+			.codepoint {
+				font-family: monospace;
+			}
+			table.result {
+				width: 25em;
+				border-collapse: collapse;
+			}
+			table.result td {
+				border: 1px solid darkgray;
+				padding: 0.5em;
+			}
+			.Arab {
+				font-family: Traditional Arabic;
+			}
+			.Armn {
+				font-family: Arian Grq;
+			}
+			.Avst {
+				font-family: Ahuramzda;
+			}
+			.Cyrs {
+				font-family: Monomakh Unicode TT;
+			}
+			.Deva {
+				font-family: Siddhanta;
+			}
+			.Geor {
+				font-family: BPG Classic;
+			}
+			.Glag {
+				font-family: Dilyana;
+			}
+			.Grek, .polytonic {
+				font-family: New Athena Unicode;
+			}
+			.Hang {
+				font-family: Noto Serif CJK KR;
+			}
+			.Hani {
+				font-family: Noto Serif CJK TC;
+			}
+			.Hebr {
+				font-family: FrankRuehl;
+			}
+			.Hira, .Kana {
+				font-family: Noto Serif CJK JP, BabelStone Han, HanaMin;
+			}
+			.Latn, .Latinx {
+				font-family: Gentium Plus;
+			}
+			.Linb {
+				font-family: Aegean;
+			}
+		</style>
+		<title>Looking up Unicode character names</title>
+	</head>
+	<body>
+		<div id="character-name-lookup">
+			<p>
+				Look up character name:
+			</p>
+			<input type="text">
+			<p class="result"></p>
+		</div>
+		<div>
+			<form id="character-search">
+				<p>
+					Search for character:
+				</p>
+				<p>
+					<label for="character-name-toggle">Hide character names</label>
+					<input id="character-name-toggle" type="checkbox">
+				</p>
+				<p>
+					<label for="codepoint-toggle">Hide codepoints</label>
+					<input id="codepoint-toggle" type="checkbox">
+				</p>
+				<p>
+					<input id="character-name-search" type="text">
+				</p>
+				<table class="result">
+					<tbody></tbody>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
